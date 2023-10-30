@@ -9,5 +9,7 @@ sudo yum install jenkins -y
 sudo systemctl daemon-reload
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
+sudo setenforce 0
 sudo firewall-cmd --zone=public --permanent --add-port=8080/tcp
 sudo firewall-cmd --reload
+sudo setenforce 1
