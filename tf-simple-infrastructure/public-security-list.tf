@@ -55,4 +55,14 @@ ingress_security_rules {
       } 
     }
 
+  ingress_security_rules {
+     tcp_options {
+      max = 8080
+      min = 8080
+    }
+
+      protocol = "6"
+       source   = "0.0.0.0/0"
+  }
+
 }

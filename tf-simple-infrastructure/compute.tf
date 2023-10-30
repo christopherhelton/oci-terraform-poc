@@ -4,7 +4,7 @@ resource "oci_core_instance" "ubuntu_instance" {
   compartment_id      = oci_identity_compartment.tf-compartment.id
   shape               = "VM.Standard2.1"
   source_details {
-    source_id   = "ocid1.image.oc1.iad.aaaaaaaaxdnjyq2drtrl5njggtas25gspssotsdzpa55cdpxwafda7essgna"
+    source_id   = "ocid1.image.oc1.iad.aaaaaaaavbafqm6xn5bkhrqtohcdphv5b7c7wzile7w33cv4drdiittiivpa"
     source_type = "image"
   }
 
@@ -16,6 +16,7 @@ resource "oci_core_instance" "ubuntu_instance" {
   }
   metadata = {
     ssh_authorized_keys = file("/home/opc/.ssh/oci-tf-compute-instance.pub")
+    user_data = "${base64encode(file("./install_jenkins.sh"))}"
   }
   preserve_boot_volume = false
 }
