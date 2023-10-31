@@ -1,5 +1,3 @@
-# Source from https://registry.terraform.io/providers/oracle/oci/latest/docs/resources/core_security_list
-
 resource "oci_core_security_list" "private-security-list"{
 
 # Required

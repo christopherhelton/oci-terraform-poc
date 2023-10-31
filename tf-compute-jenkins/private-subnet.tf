@@ -1,5 +1,3 @@
-# Source from https://registry.terraform.io/providers/oracle/oci/latest/docs/resources/core_subnet
-
 resource "oci_core_subnet" "vcn-private-subnet"{
 
   # Required
