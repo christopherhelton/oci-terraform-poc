@@ -1,14 +1,16 @@
+# Template for terraform.tfvars file
+
 # OCI Authentication details
-tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaaunprf4yuhio6wulnx5tfb7do6hff3ztmbru6jws2tp7bf4deajgq"
-user_ocid = "chelton14@gmail.com"
-fingerprint= "99:db:b7:7d:8d:89:dd:bf:34:d0:14:db:c9:c9:88:6d"
-private_key_path = "/home/oci/.oci/chelton.pem"
+tenancy_ocid = ""
+user_ocid = ""
+fingerprint= ""
+private_key_path = ""
 
 # Region
-region = "us-ashburn-1"
+region = ""
 
 # Compartment
-compartment_ocid = "ocid1.tenancy.oc1..aaaaaaaaunprf4yuhio6wulnx5tfb7do6hff3ztmbru6jws2tp7bf4deajgq"
+compartment_ocid = ""
 
 #Instance Configration
-jenkins_password = "<jenkins initial password>"
+#jenkins_password = "<jenkins initial password>"
