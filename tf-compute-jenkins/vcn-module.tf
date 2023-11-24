@@ -5,7 +5,7 @@ module "vcn" {
 
 
   # Required Inputs
-  compartment_id = oci_identity_compartment.tf-compartment.id
+  compartment_id = var.compartment_ocid
 
   # Optional Inputs
   region = "us-ashburn-1"

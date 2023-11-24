@@ -1,7 +1,7 @@
 resource "oci_core_subnet" "vcn-private-subnet"{
 
   # Required
-  compartment_id = oci_identity_compartment.tf-compartment.id
+  compartment_id = var.compartment_ocid
   vcn_id = module.vcn.vcn_id
   cidr_block = "10.0.1.0/24"
  

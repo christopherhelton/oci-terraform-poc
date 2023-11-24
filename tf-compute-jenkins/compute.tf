@@ -1,7 +1,7 @@
 resource "oci_core_instance" "ubuntu_instance" {
   # Required
   availability_domain = "tkEg:US-ASHBURN-AD-1"
-  compartment_id      = oci_identity_compartment.tf-compartment.id
+  compartment_id      = var.compartment_ocid
   shape               = "VM.Standard2.1"
   source_details {
     source_id   = "ocid1.image.oc1.iad.aaaaaaaavbafqm6xn5bkhrqtohcdphv5b7c7wzile7w33cv4drdiittiivpa"
